@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AgroLink Admin"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#D32F2F"
+        android:layout_marginBottom="32dp"/>
+
+    <EditText
+        android:id="@+id/editAdminEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Admin Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:drawable/editbox_background"/>
+
+    <EditText
+        android:id="@+id/editAdminPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Admin Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"
+        android:background="@android:drawable/editbox_background"/>
+
+    <Button
+        android:id="@+id/adminLoginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN AS ADMIN"
+        android:padding="16dp"
+        android:backgroundTint="#D32F2F"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

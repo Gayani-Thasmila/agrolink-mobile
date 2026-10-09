@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Profile"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#388E3C"
+            android:layout_marginBottom="32dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textSize="14sp"
+            android:textColor="#757575"/>
+        <EditText
+            android:id="@+id/editProfileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/editbox_background"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Address"
+            android:textSize="14sp"
+            android:textColor="#757575"/>
+        <EditText
+            android:id="@+id/editProfileEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:enabled="false"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/editbox_background"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:textSize="14sp"
+            android:textColor="#757575"/>
+        <EditText
+            android:id="@+id/editProfilePhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/editbox_background"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Delivery Address"
+                android:textSize="14sp"
+                android:textColor="#757575"/>
+            <Button
+                android:id="@+id/btnOpenMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SELECT ON MAP 📍"
+                android:textSize="10sp"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:textColor="#1976D2"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editProfileAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:lines="3"
+            android:gravity="top"
+            android:padding="12dp"
+            android:layout_marginBottom="32dp"
+            android:background="@android:drawable/editbox_background"/>
+
+        <Button
+            android:id="@+id/btnUseCurrentLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="USE CURRENT LOCATION"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#1976D2"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UPDATE PROFILE"
+            android:padding="16dp"
+            android:backgroundTint="#388E3C"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGOUT"
+            android:padding="16dp"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</ScrollView>

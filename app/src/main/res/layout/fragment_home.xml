@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/bg_light">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/txtUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome Guest"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_dark"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/btnProfile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/profile_image"
+            android:padding="4dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Profile" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AgroLink Shop"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_green"
+        android:layout_marginBottom="12dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:id="@+id/editSearch"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Search products..."
+            android:paddingStart="12dp"
+            android:paddingEnd="45dp"
+            android:background="@drawable/rounded_edittext"
+            android:textSize="14sp"
+            android:inputType="text"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/search_image" />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginBottom="16dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnCatAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="All" android:layout_marginEnd="8dp" style="@style/Widget.MaterialComponents.Button.UnelevatedButton" app:cornerRadius="25dp" android:textSize="11sp" android:backgroundTint="@color/primary_green"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnCatVeg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Vegetables" android:layout_marginEnd="8dp" style="@style/Widget.MaterialComponents.Button.OutlinedButton" app:cornerRadius="25dp" android:textSize="11sp" android:textColor="@color/primary_green" app:strokeColor="@color/primary_green"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnCatFruit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fruits" android:layout_marginEnd="8dp" style="@style/Widget.MaterialComponents.Button.OutlinedButton" app:cornerRadius="25dp" android:textSize="11sp" android:textColor="@color/primary_green" app:strokeColor="@color/primary_green"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnCatGrain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Grains" android:layout_marginEnd="8dp" style="@style/Widget.MaterialComponents.Button.OutlinedButton" app:cornerRadius="25dp" android:textSize="11sp" android:textColor="@color/primary_green" app:strokeColor="@color/primary_green"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAdminPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GO TO ADMIN PANEL"
+        android:backgroundTint="@color/error_red"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:cornerRadius="12dp"
+        android:layout_marginBottom="8dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOrders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Orders"
+        app:cornerRadius="12dp"
+        android:backgroundTint="#1976D2"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/btnConfirmLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONFIRM DELIVERY LOCATION"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="24dp"
+        android:padding="16dp"
+        android:backgroundTint="#388E3C"
+        android:textColor="#FFFFFF"/>
+
+</RelativeLayout>

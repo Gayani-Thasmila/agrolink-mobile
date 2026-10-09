@@ -1,0 +1,67 @@
+plugins {
+    alias(libs.plugins.android.application)
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'lk.jiat.agrolink'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "lk.jiat.agrolink"
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", "IMGBB_API_KEY", "\"${project.properties['imgbb_api_key']}\""
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    buildFeatures{
+        viewBinding true
+        buildConfig true
+    }
+}
+
+dependencies {
+    // Android UI & Basics
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    implementation libs.recyclerview
+
+    // Networking (Retrofit & OkHttp)
+    implementation libs.retrofit
+    implementation libs.converter.gson
+    implementation libs.okhttp.logging
+
+    // Image Loading
+    implementation libs.picasso
+
+    // Maps & Location
+    implementation libs.osmdroid
+    implementation libs.play.services.location
+    implementation libs.play.services.maps
+
+    // Firebase (Only essential parts)
+    implementation platform(libs.firebase.bom)
+    implementation libs.google.firebase.analytics
+    implementation libs.firebase.messaging
+
+    // Testing
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+}
