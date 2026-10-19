@@ -180,6 +180,38 @@ Sensitive configuration should be handled through appropriate local configuratio
 
 This project was developed as part of a Software Engineering project and demonstrates Android application development using Java, Firebase integration, REST API communication, backend integration, authentication, notifications, payment-related functionality, and mobile UI development.
 
+## App Screenshots
+
+### Home Screen
+![Home Screen](screenshots/Home_screen.jpeg)
+
+### Login Screen
+![Login Screen](screenshots/Login_screen.jpeg)
+
+### Register Screen
+![Register Screen](screenshots/Register_screen.jpeg)
+
+### Cart Screen
+![Cart Screen](screenshots/Cart_screen.jpeg)
+
+### Set Location
+![Set Location](screenshots/Set_location.jpeg)
+
+### My Orders
+![My Orders](screenshots/My_orders.jpeg)
+
+### Profile Screen
+![Profile Screen](screenshots/Profile_screen.jpeg)
+
+### Admin Dashboard
+![Admin Dashboard](screenshots/Admin_dashboard.jpeg)
+
+### Manage Orders
+![Manage Orders](screenshots/Manage_orders.jpeg)
+
+### Users List
+![Users List](screenshots/Users_list.jpeg)
+
 ## Author
 
 **Gayani Thasmila**
